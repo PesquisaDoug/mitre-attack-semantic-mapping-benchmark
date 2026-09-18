@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the associated article and software."
+title: "Transformer-Based Semantic Mapping of Cyber Threat Intelligence to MITRE ATT&CK Techniques: A Retrieval and Reranking Benchmark"
+version: "0.1.0"
+date-released: "2026-09-17"
+authors:
+  - family-names: "Silva"
+    given-names: "Douglas Felipe de Lima"
+    orcid: "https://orcid.org/0009-0007-9868-4891"
+    affiliation: "Instituto Metrópole Digital, Universidade Federal do Rio Grande do Norte"
+    email: "pesquisadoug@gmail.com"
+license: "MIT"
+repository-code: "https://github.com/PesquisaDoug/mitre-attack-semantic-mapping-benchmark"
+doi: "10.5281/zenodo.22821273"
