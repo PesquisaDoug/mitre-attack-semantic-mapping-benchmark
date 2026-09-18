@@ -1,0 +1,18 @@
+{
+  "dataset_name": "MITRE ATT&CK Enterprise STIX 2.1",
+  "domain": "enterprise-attack",
+  "canonical_repository": "https://github.com/mitre-attack/attack-stix-data",
+  "bundle_url": "https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/enterprise-attack/enterprise-attack.json",
+  "bundle_file": "enterprise-attack.json",
+  "bundle_sha256": "dc1639caa5501d720e280cf1cbd8fbe009884a0c9b3e6e9ed9d0c25166c3d8f4",
+  "bundle_size_bytes": 53835637,
+  "stix_object_count": 26086,
+  "latest_object_modified": "2026-08-05T21:33:58.496Z",
+  "candidate_technique_count": 697,
+  "all_constructed_query_count": 17030,
+  "evaluation_query_count": 17030,
+  "strict_query_count": 14868,
+  "query_construction": "Active STIX 'uses' relationships with non-empty descriptions; queries are grouped by source_ref + normalized description.",
+  "strict_subset_rule": "Exclude query if exact relevant ATT&CK ID or exact relevant technique name occurs in normalized query text.",
+  "validated_at_utc": "2026-09-17T02:53:24.783746+00:00"
+}
