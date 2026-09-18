@@ -1,0 +1,16 @@
+{
+  "bi_encoder": {
+    "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "embedding_dimension": 384,
+    "parameter_count": 22713216,
+    "parameter_memory_mb": 86.64404296875,
+    "huggingface_commit_hash": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+  },
+  "cross_encoder": {
+    "model_id": "cross-encoder/ms-marco-MiniLM-L6-v2",
+    "parameter_count": 22713601,
+    "parameter_memory_mb": 86.64551162719727,
+    "huggingface_commit_hash": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+    "rerank_top_k": 20
+  }
+}

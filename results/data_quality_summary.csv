@@ -1,0 +1,8 @@
+metric,value
+candidate_techniques,697
+all_procedure_queries_available,17030
+evaluation_queries,17030
+strict_queries,14868
+target_id_leakage_queries,0
+exact_target_name_leakage_queries,2162
+multi_relevant_queries,91

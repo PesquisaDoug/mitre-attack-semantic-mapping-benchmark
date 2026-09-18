@@ -1,0 +1,18 @@
+{
+  "profile": "full",
+  "completed_at_utc": "2026-09-17T03:59:34.173654+00:00",
+  "device": "cpu",
+  "pair_count": 340600,
+  "top_k": 20,
+  "cross_encoder_seconds": 3860.2932472999964,
+  "mean_rerank_latency_ms": 226.6760567997649,
+  "model_metadata": {
+    "cross_encoder": {
+      "model_id": "cross-encoder/ms-marco-MiniLM-L6-v2",
+      "parameter_count": 22713601,
+      "parameter_memory_mb": 86.64551162719727,
+      "huggingface_commit_hash": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+      "rerank_top_k": 20
+    }
+  }
+}

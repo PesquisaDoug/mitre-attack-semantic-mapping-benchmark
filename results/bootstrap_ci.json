@@ -1,0 +1,273 @@
+{
+  "seed": 42,
+  "n_boot": 10000,
+  "paired_by_query": true,
+  "single_method_cis": [
+    {
+      "subset": "all",
+      "metric": "mrr@10",
+      "method": "TF-IDF",
+      "mean": 0.36669982477234386,
+      "ci_low": 0.3606255609848167,
+      "ci_high": 0.37308327100168703,
+      "n_queries": 17030
+    },
+    {
+      "subset": "all",
+      "metric": "mrr@10",
+      "method": "BM25",
+      "mean": 0.3262948205314617,
+      "ci_low": 0.3201699696613819,
+      "ci_high": 0.33241974946173425,
+      "n_queries": 17030
+    },
+    {
+      "subset": "all",
+      "metric": "mrr@10",
+      "method": "MiniLM-BiEncoder",
+      "mean": 0.412818322474811,
+      "ci_low": 0.40663901588233653,
+      "ci_high": 0.4191024965280691,
+      "n_queries": 17030
+    },
+    {
+      "subset": "all",
+      "metric": "mrr@10",
+      "method": "MiniLM-BiEncoder+CrossEncoder",
+      "mean": 0.4649782596538322,
+      "ci_low": 0.45866255394308825,
+      "ci_high": 0.47126236904528895,
+      "n_queries": 17030
+    },
+    {
+      "subset": "all",
+      "metric": "ndcg@10",
+      "method": "TF-IDF",
+      "mean": 0.42042755025603396,
+      "ci_low": 0.4143882317238257,
+      "ci_high": 0.42666934040375937,
+      "n_queries": 17030
+    },
+    {
+      "subset": "all",
+      "metric": "ndcg@10",
+      "method": "BM25",
+      "mean": 0.3744238512967229,
+      "ci_low": 0.368245187310451,
+      "ci_high": 0.38061406086866595,
+      "n_queries": 17030
+    },
+    {
+      "subset": "all",
+      "metric": "ndcg@10",
+      "method": "MiniLM-BiEncoder",
+      "mean": 0.4739501992765771,
+      "ci_low": 0.46789371994968804,
+      "ci_high": 0.48003518641447707,
+      "n_queries": 17030
+    },
+    {
+      "subset": "all",
+      "metric": "ndcg@10",
+      "method": "MiniLM-BiEncoder+CrossEncoder",
+      "mean": 0.5233490265268407,
+      "ci_low": 0.5172883447902769,
+      "ci_high": 0.5293807324024733,
+      "n_queries": 17030
+    },
+    {
+      "subset": "strict",
+      "metric": "mrr@10",
+      "method": "TF-IDF",
+      "mean": 0.32348887138031607,
+      "ci_low": 0.31717251228802884,
+      "ci_high": 0.3298689225768776,
+      "n_queries": 14868
+    },
+    {
+      "subset": "strict",
+      "metric": "mrr@10",
+      "method": "BM25",
+      "mean": 0.29477227645609405,
+      "ci_low": 0.28850375566893427,
+      "ci_high": 0.3012556375736106,
+      "n_queries": 14868
+    },
+    {
+      "subset": "strict",
+      "metric": "mrr@10",
+      "method": "MiniLM-BiEncoder",
+      "mean": 0.38616086108015074,
+      "ci_low": 0.37965736977465186,
+      "ci_high": 0.3926299978167664,
+      "n_queries": 14868
+    },
+    {
+      "subset": "strict",
+      "metric": "mrr@10",
+      "method": "MiniLM-BiEncoder+CrossEncoder",
+      "mean": 0.43103445238735794,
+      "ci_low": 0.42423862396496576,
+      "ci_high": 0.43786200842546685,
+      "n_queries": 14868
+    },
+    {
+      "subset": "strict",
+      "metric": "ndcg@10",
+      "method": "TF-IDF",
+      "mean": 0.3774732687597253,
+      "ci_low": 0.37114342054733046,
+      "ci_high": 0.3839004660440663,
+      "n_queries": 14868
+    },
+    {
+      "subset": "strict",
+      "metric": "ndcg@10",
+      "method": "BM25",
+      "mean": 0.34106444430942673,
+      "ci_low": 0.33476544423552174,
+      "ci_high": 0.34756522946360247,
+      "n_queries": 14868
+    },
+    {
+      "subset": "strict",
+      "metric": "ndcg@10",
+      "method": "MiniLM-BiEncoder",
+      "mean": 0.44779771706663773,
+      "ci_low": 0.44145682294340094,
+      "ci_high": 0.4541178312073825,
+      "n_queries": 14868
+    },
+    {
+      "subset": "strict",
+      "metric": "ndcg@10",
+      "method": "MiniLM-BiEncoder+CrossEncoder",
+      "mean": 0.49154762030292787,
+      "ci_low": 0.4849754692232657,
+      "ci_high": 0.498145527449736,
+      "n_queries": 14868
+    }
+  ],
+  "paired_diff_cis": [
+    {
+      "subset": "all",
+      "metric": "mrr@10",
+      "a": "MiniLM-BiEncoder+CrossEncoder",
+      "b": "MiniLM-BiEncoder",
+      "mean_diff": 0.05215993717902115,
+      "ci_low": 0.0465504781478064,
+      "ci_high": 0.057945375341367705,
+      "n_queries": 17030
+    },
+    {
+      "subset": "all",
+      "metric": "mrr@10",
+      "a": "MiniLM-BiEncoder",
+      "b": "TF-IDF",
+      "mean_diff": 0.04611849770246716,
+      "ci_low": 0.03919073483768141,
+      "ci_high": 0.052885101221933274,
+      "n_queries": 17030
+    },
+    {
+      "subset": "all",
+      "metric": "mrr@10",
+      "a": "MiniLM-BiEncoder",
+      "b": "BM25",
+      "mean_diff": 0.08652350194334928,
+      "ci_low": 0.07954530753385718,
+      "ci_high": 0.09339681374605037,
+      "n_queries": 17030
+    },
+    {
+      "subset": "all",
+      "metric": "ndcg@10",
+      "a": "MiniLM-BiEncoder+CrossEncoder",
+      "b": "MiniLM-BiEncoder",
+      "mean_diff": 0.049398827250263594,
+      "ci_low": 0.04453265222128349,
+      "ci_high": 0.054366593112639645,
+      "n_queries": 17030
+    },
+    {
+      "subset": "all",
+      "metric": "ndcg@10",
+      "a": "MiniLM-BiEncoder",
+      "b": "TF-IDF",
+      "mean_diff": 0.05352264902054313,
+      "ci_low": 0.0468691697240659,
+      "ci_high": 0.0600156135684494,
+      "n_queries": 17030
+    },
+    {
+      "subset": "all",
+      "metric": "ndcg@10",
+      "a": "MiniLM-BiEncoder",
+      "b": "BM25",
+      "mean_diff": 0.09952634797985419,
+      "ci_low": 0.09273367082137132,
+      "ci_high": 0.10630988673195668,
+      "n_queries": 17030
+    },
+    {
+      "subset": "strict",
+      "metric": "mrr@10",
+      "a": "MiniLM-BiEncoder+CrossEncoder",
+      "b": "MiniLM-BiEncoder",
+      "mean_diff": 0.04487359130720712,
+      "ci_low": 0.03892302059712773,
+      "ci_high": 0.05103720678478548,
+      "n_queries": 14868
+    },
+    {
+      "subset": "strict",
+      "metric": "mrr@10",
+      "a": "MiniLM-BiEncoder",
+      "b": "TF-IDF",
+      "mean_diff": 0.06267198969983473,
+      "ci_low": 0.05555472616698908,
+      "ci_high": 0.06986355724022189,
+      "n_queries": 14868
+    },
+    {
+      "subset": "strict",
+      "metric": "mrr@10",
+      "a": "MiniLM-BiEncoder",
+      "b": "BM25",
+      "mean_diff": 0.09138858462405677,
+      "ci_low": 0.08441033275362873,
+      "ci_high": 0.09840137322191903,
+      "n_queries": 14868
+    },
+    {
+      "subset": "strict",
+      "metric": "ndcg@10",
+      "a": "MiniLM-BiEncoder+CrossEncoder",
+      "b": "MiniLM-BiEncoder",
+      "mean_diff": 0.04374990323629011,
+      "ci_low": 0.038507699246597624,
+      "ci_high": 0.0490713920591052,
+      "n_queries": 14868
+    },
+    {
+      "subset": "strict",
+      "metric": "ndcg@10",
+      "a": "MiniLM-BiEncoder",
+      "b": "TF-IDF",
+      "mean_diff": 0.07032444830691244,
+      "ci_low": 0.06348993639906587,
+      "ci_high": 0.07725687050567291,
+      "n_queries": 14868
+    },
+    {
+      "subset": "strict",
+      "metric": "ndcg@10",
+      "a": "MiniLM-BiEncoder",
+      "b": "BM25",
+      "mean_diff": 0.106733272757211,
+      "ci_low": 0.09986661711778334,
+      "ci_high": 0.11367608682039931,
+      "n_queries": 14868
+    }
+  ]
+}

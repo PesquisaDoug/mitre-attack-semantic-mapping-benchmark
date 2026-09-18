@@ -1,0 +1,21 @@
+{
+  "profile": "full",
+  "notebook_preserved": true,
+  "reference_copy": true,
+  "deterministic_counts_match": {
+    "candidate_technique_count": true,
+    "all_constructed_query_count": true,
+    "evaluation_query_count": true,
+    "strict_query_count": true
+  },
+  "methodology_preserved": {
+    "seed_42": true,
+    "profile_full": true,
+    "max_queries_none": true,
+    "rerank_top_20": true,
+    "biencoder_id": true,
+    "crossencoder_id": true,
+    "embedding_dimension_384": true
+  },
+  "numeric_note": "FULL metrics were generated locally on CPU with current package versions recorded in experiment_manifest.json. Deterministic dataset counts match the executed notebook corpus construction; FULL was not previously available from the notebook outputs inspected."
+}

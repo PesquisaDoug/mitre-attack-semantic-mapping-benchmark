@@ -1,0 +1,12 @@
+{
+  "profile": "full",
+  "streamlit_url": "http://localhost:8502",
+  "http_status": 200,
+  "http_title_present": true,
+  "inference_status": "ok",
+  "sample_query_returned_attack_id": "T1027.012",
+  "sample_query_scores_numeric": true,
+  "empty_query_message_implemented": true,
+  "analyst_validation_warning_implemented": true,
+  "note": "Smoke used Streamlit HTTP startup plus direct app-equivalent inference path using full experiment manifest."
+}

@@ -1,0 +1,116 @@
+{
+  "experiment_name": "mitre_attack_transformer_semantic_mapping",
+  "title": "Transformer-Based Semantic Mapping of Cyber Threat Intelligence to MITRE ATT&CK Techniques: A Retrieval and Reranking Benchmark",
+  "seed": 42,
+  "profile": "full",
+  "quick_mode": false,
+  "max_queries": null,
+  "rerank_top_k": 20,
+  "report_cutoff": 10,
+  "dataset": {
+    "dataset_name": "MITRE ATT&CK Enterprise STIX 2.1",
+    "domain": "enterprise-attack",
+    "canonical_repository": "https://github.com/mitre-attack/attack-stix-data",
+    "bundle_url": "https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/enterprise-attack/enterprise-attack.json",
+    "bundle_file": "enterprise-attack.json",
+    "bundle_sha256": "dc1639caa5501d720e280cf1cbd8fbe009884a0c9b3e6e9ed9d0c25166c3d8f4",
+    "bundle_size_bytes": 53835637,
+    "stix_object_count": 26086,
+    "latest_object_modified": "2026-08-05T21:33:58.496Z",
+    "candidate_technique_count": 697,
+    "all_constructed_query_count": 17030,
+    "evaluation_query_count": 17030,
+    "strict_query_count": 14868,
+    "query_construction": "Active STIX 'uses' relationships with non-empty descriptions; queries are grouped by source_ref + normalized description.",
+    "strict_subset_rule": "Exclude query if exact relevant ATT&CK ID or exact relevant technique name occurs in normalized query text.",
+    "validated_at_utc": "2026-09-17T02:53:24.783746+00:00"
+  },
+  "models": {
+    "bi_encoder": {
+      "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+      "embedding_dimension": 384,
+      "parameter_count": 22713216,
+      "parameter_memory_mb": 86.64404296875,
+      "huggingface_commit_hash": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+    },
+    "cross_encoder": {
+      "model_id": "cross-encoder/ms-marco-MiniLM-L6-v2",
+      "parameter_count": 22713601,
+      "parameter_memory_mb": 86.64551162719727,
+      "huggingface_commit_hash": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+      "rerank_top_k": 20
+    }
+  },
+  "query_subsets": {
+    "all": 17030,
+    "strict": 14868
+  },
+  "metric_definitions": {
+    "recall@k": "fraction of relevant ATT&CK techniques retrieved in top-k",
+    "hit@k": "whether at least one relevant ATT&CK technique occurs in top-k",
+    "mrr@10": "reciprocal rank of the first relevant document, cutoff 10",
+    "ndcg@10": "binary relevance normalized discounted cumulative gain, cutoff 10",
+    "map@10": "mean average precision using binary relevance, cutoff 10"
+  },
+  "efficiency": [
+    {
+      "method": "TF-IDF",
+      "index_seconds": 0.11921510001411662,
+      "mean_query_latency_ms": 0.015786488549904137,
+      "parameter_count": 0,
+      "parameter_memory_mb": 0.0,
+      "local_artifact_mb": 2.0299386978149414,
+      "query_encoding_seconds": NaN,
+      "similarity_seconds": NaN
+    },
+    {
+      "method": "BM25",
+      "index_seconds": 0.018641100003151223,
+      "mean_query_latency_ms": 1.041361849676231,
+      "parameter_count": 0,
+      "parameter_memory_mb": 0.0,
+      "local_artifact_mb": 0.8972415924072266,
+      "query_encoding_seconds": NaN,
+      "similarity_seconds": NaN
+    },
+    {
+      "method": "MiniLM-BiEncoder",
+      "index_seconds": 6.891741400002502,
+      "mean_query_latency_ms": 1.3539403170873987,
+      "parameter_count": 22713216,
+      "parameter_memory_mb": 86.64404296875,
+      "local_artifact_mb": 1.0211181640625,
+      "query_encoding_seconds": 23.041154799982905,
+      "similarity_seconds": 0.01644880001549609
+    },
+    {
+      "method": "MiniLM-BiEncoder+CrossEncoder",
+      "index_seconds": 6.891741400002502,
+      "mean_query_latency_ms": 228.0299971168523,
+      "parameter_count": 45426817,
+      "parameter_memory_mb": 173.28955459594727,
+      "local_artifact_mb": 1.0211181640625,
+      "query_encoding_seconds": NaN,
+      "similarity_seconds": NaN
+    }
+  ],
+  "device": {
+    "torch_device": "cpu",
+    "gpu_name": null,
+    "gpu_memory_gb": null,
+    "cuda_version": null
+  },
+  "software": {
+    "python": "3.12.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.17.0",
+    "sentence_transformers": "6.0.1",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "scikit_learn": "1.9.1"
+  },
+  "git_commit": null,
+  "completed_at_utc": "2026-09-17T09:17:45.698956+00:00"
+}

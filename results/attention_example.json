@@ -1,0 +1,8 @@
+{
+  "query_id": "Q000009",
+  "query_text": "2015 Ukraine Electric Power Attack. During the 2015 Ukraine Electric Power Attack, Sandworm Team moved their tools laterally within the corporate network and between the ICS and corporate network.",
+  "top_candidate_attack_id": "T1570",
+  "top_candidate_name": "Lateral Tool Transfer",
+  "top_candidate_relevant": true,
+  "analysis": "Exploratory final-layer attention inspection. Attention weights are not interpreted as causal explanation."
+}

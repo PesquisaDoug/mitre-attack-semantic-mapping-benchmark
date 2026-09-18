@@ -1,0 +1,20 @@
+{
+  "title": "Transformer-Based Semantic Mapping of Cyber Threat Intelligence to MITRE ATT&CK Techniques: A Retrieval and Reranking Benchmark",
+  "research_questions": {
+    "RQ1": "Lexical versus pretrained semantic retrieval.",
+    "RQ2": "Cross-Encoder reranking gain over bi-encoder retrieval.",
+    "RQ3": "Performance after exact target-name/ID leakage filtering.",
+    "RQ4": "Exploratory Cross-Encoder attention inspection.",
+    "RQ5": "Quality/latency/model-footprint trade-offs."
+  },
+  "main_results": {
+    "metrics": "results/metrics.csv",
+    "per_query_metrics": "results/per_query_metrics.csv",
+    "rankings": "results/rankings.csv",
+    "efficiency": "results/efficiency.csv",
+    "reranking_gain": "results/reranking_gain.csv",
+    "attention": "results/attention_example.json",
+    "failure_cases": "results/strict_crossencoder_failure_cases.csv"
+  },
+  "figures_directory": "figures/"
+}
