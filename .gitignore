@@ -1,0 +1,39 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.env
+*.part
+.DS_Store
+Thumbs.db
+.vscode/
+data/raw/
+artifacts/embeddings/*.npy
+.cache/
+hf_cache/
+.archive
+
+# temporary manuscript preview renders (not part of reproducibility package)
+tmp/
+
+# LaTeX build artifacts
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.out
+paper/*.synctex.gz
+paper/*.toc
+
+# oversized / intermediate ranking exports (regenerable via scripts/generate_results.py;
+# exceed or approach GitHub's 100MB file limit, or correspond to the "quick" dev/smoke
+# profile rather than the validated FULL run reported in the manuscript)
+results/rankings.csv
+results/retrieval_rankings_quick.json
+results/reranking_rankings_quick.json
+results/retrieval_state_quick.json
+results/reranking_state_quick.json

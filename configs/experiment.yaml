@@ -1,0 +1,38 @@
+seed: 42
+
+dataset:
+  domain: enterprise-attack
+  source_repository: https://github.com/mitre-attack/attack-stix-data
+  bundle_url: https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/enterprise-attack/enterprise-attack.json
+  bundle_file: enterprise-attack.json
+
+query_construction:
+  relationship_type: uses
+  require_nonempty_description: true
+  group_by_source_and_description: true
+
+evaluation:
+  subsets:
+    - all
+    - strict
+  strict_excludes_exact_target_id: true
+  strict_excludes_exact_target_name: true
+  cutoffs:
+    - 1
+    - 5
+    - 10
+  report_cutoff: 10
+
+reranking:
+  top_k: 20
+
+attention:
+  max_length: 256
+  top_tokens: 25
+  matrix_tokens: 48
+
+profiles:
+  quick:
+    max_queries: 1000
+  full:
+    max_queries: null
